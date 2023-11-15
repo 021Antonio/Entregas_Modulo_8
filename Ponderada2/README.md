@@ -18,9 +18,15 @@ O segundo launcher tambem localizado na pasta launch é o navigation_launch. Ele
 
 ## Demostação
 
-video 1
 
-video 2
+Launch de mapeamento
+
+https://github.com/021Antonio/Entregas_Modulo_8/assets/99191811/36ba63b6-5da9-4de2-b488-1a1f09713aec
+
+Launch de operação
+
+https://github.com/021Antonio/Entregas_Modulo_8/assets/99191811/67189b53-3eb8-4b5b-b56d-5efebcf61b07
+
 
 ## Como rodar
 
