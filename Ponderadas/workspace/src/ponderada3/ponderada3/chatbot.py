@@ -1,28 +1,49 @@
 import re
 
-def greet_back(time_of_day):
-    if time_of_day == "dia":
-        return f"Bom {time_of_day}!"
+#Dict com os pontos de interesse
+point_dict = {
+    "prego": "armazém",
+    "parafuso": "depósito",
+    "fita": "caixa de ferramentas",
+    "trena": "sala de medições",
+    "porca": "gaveta de ferragens",
+    "martelo": "prateleira"
+}
+
+
+
+def go_to(point): #Função que recebe o ponto de interesse e imprime a localização
+    if point in point_dict: #Verifica se o ponto de interesse está no dict
+        print(f"Vamo la para '{point}': {point_dict[point]}") #Imprime a localização
     else:
-        return f"Boa {time_of_day}!"
+        print(f"Vish, vou ficar devendo  esse item aqui oh",{point},"Foi mal, não sei onde fica.")#Caso não esteja,
+        #imprime essa mensagem
 
-def genki_back(_):
-    return "Comigo está tudo bem, e com você?"
-
+#Dict com as intenções e suas respectivas funções
 intent_dict = {
-    r"\b(?:(?:[Bb]o[am])\s(tarde|dia|noite))": "greetings",
-    r"\b(?:[Tt]udo)?\s?(?:(?:[bB]em)|(?:[bB]ão)|(?:[fF]irme)|(?:em\sriba))\?": "genki"
+    r"\b[Vv][áa](?:\spara)?\s?[oa]?\s(.+)": go_to, # "Va para o ..."
+    #Seguindo essa logica, a primeira parte possiblita o uso de "Vá para o ..." e "Va para o ...", sendo ele maiusculo ou minusculo
+    #A segunda parte possiblita o uso de do pronome adequado como [a] ou [o]
+
+    r"\b(?:[Vv]a)(?:\spara)?(?:\so)?\s(?:objeto)?\s(.+)": go_to, # Va para o obejto ...
+    #Podemos dizer que essa parte segue a logia da primeira mas apenas com o uso de "Va para o objeto ..."
+
+    r"\b(?:[Qq]uero)(?:\sum[a])?\s(.+)": go_to # "Quero o ..."
+    #Para diferenciar um pouco, mas bem pouco, Botei um "\sum[a]" para que o usuario possa usar "Quero um..." ou "Quero uma...
+
 }
 
-action_dict = {
-        "greetings": greet_back,
-        "genki": genki_back
-}
+def main(): #Função principal
+    command = input("O que queres hoje? ") #Recebe o comando do pronpt
+    for key, function in intent_dict.items(): #Percorre o dict de intenções
+        pattern = re.compile(key) #Compila a expressão regular
+        point = pattern.findall(command) #Procura a expressão regular no comando
+        if point:
+            print("ShowVe, calma ai")#Caso encontre, imprime essa mensagem
+            function(point[0])#Chama a função com o ponto de interesse
+            break#Para o loop
+    else:
+        print("Não entendi o que você quis dizer.")#Caso não encontre, imprime essa mensagem
 
-command = input("Digite o seu comando: ")
-for key, value in intent_dict.items():
-    pattern = re.compile(key)
-    groups = pattern.findall(command)
-    if groups:
-        print(f"{action_dict[value](groups[0])}", end=" ")
-print()
+if __name__ == "__main__":
+    main()
