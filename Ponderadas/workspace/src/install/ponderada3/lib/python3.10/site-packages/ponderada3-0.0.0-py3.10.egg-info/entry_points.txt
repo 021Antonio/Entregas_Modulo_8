@@ -1,0 +1,3 @@
+[console_scripts]
+chatbot = ponderada3.chatbot:main
+
