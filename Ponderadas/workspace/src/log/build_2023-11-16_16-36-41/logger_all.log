@@ -1,0 +1,115 @@
+[1.599s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'ponderada3']
+[1.599s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['ponderada3'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f4bed608e80>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f4bed60a860>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f4bed60a860>>)
+[1.677s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.677s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.677s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.677s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.677s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.677s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.677s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/antonio/Documents/Entregas_Modulo_8/Ponderadas/workspace/src'
+[1.677s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.678s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.678s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.678s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.678s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.678s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.678s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.678s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.678s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.698s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.698s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.698s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.698s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.698s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.698s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.698s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.698s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.699s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.699s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.699s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.699s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.699s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.699s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.699s] Level 1:colcon.colcon_core.package_identification:_identify(ponderada3) by extensions ['ignore', 'ignore_ament_install']
+[1.699s] Level 1:colcon.colcon_core.package_identification:_identify(ponderada3) by extension 'ignore'
+[1.699s] Level 1:colcon.colcon_core.package_identification:_identify(ponderada3) by extension 'ignore_ament_install'
+[1.699s] Level 1:colcon.colcon_core.package_identification:_identify(ponderada3) by extensions ['colcon_pkg']
+[1.700s] Level 1:colcon.colcon_core.package_identification:_identify(ponderada3) by extension 'colcon_pkg'
+[1.700s] Level 1:colcon.colcon_core.package_identification:_identify(ponderada3) by extensions ['colcon_meta']
+[1.700s] Level 1:colcon.colcon_core.package_identification:_identify(ponderada3) by extension 'colcon_meta'
+[1.700s] Level 1:colcon.colcon_core.package_identification:_identify(ponderada3) by extensions ['ros']
+[1.700s] Level 1:colcon.colcon_core.package_identification:_identify(ponderada3) by extension 'ros'
+[1.704s] DEBUG:colcon.colcon_core.package_identification:Package 'ponderada3' with type 'ros.ament_python' and name 'ponderada3'
+[1.705s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.705s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.705s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.705s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.705s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.853s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.853s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.877s] WARNING:colcon.colcon_core.prefix_path.colcon:The path '/home/antonio/Documents/Entregas_Modulo_8/Ponderadas/workspace_ponderadas/install' in the environment variable COLCON_PREFIX_PATH doesn't exist
+[1.877s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/antonio/Documents/Entregas_Modulo_8/Ponderadas/workspace_ponderadas/install/ponderda3' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[1.900s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/antonio/Documents/Entregas_Modulo_8/Ponderadas/workspace/src/install
+[1.925s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 398 installed packages in /opt/ros/humble
+[1.944s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[2.124s] Level 5:colcon.colcon_core.verb:set package 'ponderada3' build argument 'cmake_args' from command line to 'None'
+[2.124s] Level 5:colcon.colcon_core.verb:set package 'ponderada3' build argument 'cmake_target' from command line to 'None'
+[2.124s] Level 5:colcon.colcon_core.verb:set package 'ponderada3' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.124s] Level 5:colcon.colcon_core.verb:set package 'ponderada3' build argument 'cmake_clean_cache' from command line to 'False'
+[2.124s] Level 5:colcon.colcon_core.verb:set package 'ponderada3' build argument 'cmake_clean_first' from command line to 'False'
+[2.124s] Level 5:colcon.colcon_core.verb:set package 'ponderada3' build argument 'cmake_force_configure' from command line to 'False'
+[2.124s] Level 5:colcon.colcon_core.verb:set package 'ponderada3' build argument 'ament_cmake_args' from command line to 'None'
+[2.124s] Level 5:colcon.colcon_core.verb:set package 'ponderada3' build argument 'catkin_cmake_args' from command line to 'None'
+[2.124s] Level 5:colcon.colcon_core.verb:set package 'ponderada3' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.124s] DEBUG:colcon.colcon_core.verb:Building package 'ponderada3' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/antonio/Documents/Entregas_Modulo_8/Ponderadas/workspace/src/build/ponderada3', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/antonio/Documents/Entregas_Modulo_8/Ponderadas/workspace/src/install/ponderada3', 'merge_install': False, 'path': '/home/antonio/Documents/Entregas_Modulo_8/Ponderadas/workspace/src/ponderada3', 'symlink_install': False, 'test_result_base': None}
+[2.147s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[2.172s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[2.172s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/antonio/Documents/Entregas_Modulo_8/Ponderadas/workspace/src/ponderada3' with build type 'ament_python'
+[2.172s] Level 1:colcon.colcon_core.shell:create_environment_hook('ponderada3', 'ament_prefix_path')
+[2.198s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[2.198s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/antonio/Documents/Entregas_Modulo_8/Ponderadas/workspace/src/install/ponderada3/share/ponderada3/hook/ament_prefix_path.ps1'
+[2.200s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/antonio/Documents/Entregas_Modulo_8/Ponderadas/workspace/src/install/ponderada3/share/ponderada3/hook/ament_prefix_path.dsv'
+[2.201s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/antonio/Documents/Entregas_Modulo_8/Ponderadas/workspace/src/install/ponderada3/share/ponderada3/hook/ament_prefix_path.sh'
+[2.228s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.228s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.751s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/antonio/Documents/Entregas_Modulo_8/Ponderadas/workspace/src/ponderada3'
+[2.778s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.778s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.478s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/antonio/Documents/Entregas_Modulo_8/Ponderadas/workspace/src/ponderada3': PYTHONPATH=/home/antonio/Documents/Entregas_Modulo_8/Ponderadas/workspace/src/build/ponderada3/prefix_override:/home/antonio/Documents/Entregas_Modulo_8/Ponderadas/workspace/src/install/ponderada3/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/ponderada3 build --build-base /home/antonio/Documents/Entregas_Modulo_8/Ponderadas/workspace/src/build/ponderada3/build install --record /home/antonio/Documents/Entregas_Modulo_8/Ponderadas/workspace/src/build/ponderada3/install.log --single-version-externally-managed
+[4.003s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/antonio/Documents/Entregas_Modulo_8/Ponderadas/workspace/src/ponderada3' returned '0': PYTHONPATH=/home/antonio/Documents/Entregas_Modulo_8/Ponderadas/workspace/src/build/ponderada3/prefix_override:/home/antonio/Documents/Entregas_Modulo_8/Ponderadas/workspace/src/install/ponderada3/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/ponderada3 build --build-base /home/antonio/Documents/Entregas_Modulo_8/Ponderadas/workspace/src/build/ponderada3/build install --record /home/antonio/Documents/Entregas_Modulo_8/Ponderadas/workspace/src/build/ponderada3/install.log --single-version-externally-managed
+[4.035s] Level 1:colcon.colcon_core.environment:checking '/home/antonio/Documents/Entregas_Modulo_8/Ponderadas/workspace/src/install/ponderada3' for CMake module files
+[4.036s] Level 1:colcon.colcon_core.environment:checking '/home/antonio/Documents/Entregas_Modulo_8/Ponderadas/workspace/src/install/ponderada3' for CMake config files
+[4.037s] Level 1:colcon.colcon_core.environment:checking '/home/antonio/Documents/Entregas_Modulo_8/Ponderadas/workspace/src/install/ponderada3/lib'
+[4.037s] Level 1:colcon.colcon_core.environment:checking '/home/antonio/Documents/Entregas_Modulo_8/Ponderadas/workspace/src/install/ponderada3/bin'
+[4.038s] Level 1:colcon.colcon_core.environment:checking '/home/antonio/Documents/Entregas_Modulo_8/Ponderadas/workspace/src/install/ponderada3/lib/pkgconfig/ponderada3.pc'
+[4.038s] Level 1:colcon.colcon_core.environment:checking '/home/antonio/Documents/Entregas_Modulo_8/Ponderadas/workspace/src/install/ponderada3/lib/python3.10/site-packages'
+[4.038s] Level 1:colcon.colcon_core.shell:create_environment_hook('ponderada3', 'pythonpath')
+[4.062s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/antonio/Documents/Entregas_Modulo_8/Ponderadas/workspace/src/install/ponderada3/share/ponderada3/hook/pythonpath.ps1'
+[4.071s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/antonio/Documents/Entregas_Modulo_8/Ponderadas/workspace/src/install/ponderada3/share/ponderada3/hook/pythonpath.dsv'
+[4.071s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/antonio/Documents/Entregas_Modulo_8/Ponderadas/workspace/src/install/ponderada3/share/ponderada3/hook/pythonpath.sh'
+[4.072s] Level 1:colcon.colcon_core.environment:checking '/home/antonio/Documents/Entregas_Modulo_8/Ponderadas/workspace/src/install/ponderada3/bin'
+[4.072s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ponderada3)
+[4.097s] INFO:colcon.colcon_core.shell:Creating package script '/home/antonio/Documents/Entregas_Modulo_8/Ponderadas/workspace/src/install/ponderada3/share/ponderada3/package.ps1'
+[4.101s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/antonio/Documents/Entregas_Modulo_8/Ponderadas/workspace/src/install/ponderada3/share/ponderada3/package.dsv'
+[4.102s] INFO:colcon.colcon_core.shell:Creating package script '/home/antonio/Documents/Entregas_Modulo_8/Ponderadas/workspace/src/install/ponderada3/share/ponderada3/package.sh'
+[4.103s] INFO:colcon.colcon_core.shell:Creating package script '/home/antonio/Documents/Entregas_Modulo_8/Ponderadas/workspace/src/install/ponderada3/share/ponderada3/package.bash'
+[4.104s] INFO:colcon.colcon_core.shell:Creating package script '/home/antonio/Documents/Entregas_Modulo_8/Ponderadas/workspace/src/install/ponderada3/share/ponderada3/package.zsh'
+[4.105s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/antonio/Documents/Entregas_Modulo_8/Ponderadas/workspace/src/install/ponderada3/share/colcon-core/packages/ponderada3)
+[4.105s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[4.106s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[4.106s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[4.106s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[4.141s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[4.141s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[4.141s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[4.171s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[4.196s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/antonio/Documents/Entregas_Modulo_8/Ponderadas/workspace/src/install/local_setup.ps1'
+[4.197s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/antonio/Documents/Entregas_Modulo_8/Ponderadas/workspace/src/install/_local_setup_util_ps1.py'
+[4.199s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/antonio/Documents/Entregas_Modulo_8/Ponderadas/workspace/src/install/setup.ps1'
+[4.225s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/antonio/Documents/Entregas_Modulo_8/Ponderadas/workspace/src/install/local_setup.sh'
+[4.226s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/antonio/Documents/Entregas_Modulo_8/Ponderadas/workspace/src/install/_local_setup_util_sh.py'
+[4.227s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/antonio/Documents/Entregas_Modulo_8/Ponderadas/workspace/src/install/setup.sh'
+[4.252s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/antonio/Documents/Entregas_Modulo_8/Ponderadas/workspace/src/install/local_setup.bash'
+[4.253s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/antonio/Documents/Entregas_Modulo_8/Ponderadas/workspace/src/install/setup.bash'
+[4.278s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/antonio/Documents/Entregas_Modulo_8/Ponderadas/workspace/src/install/local_setup.zsh'
+[4.278s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/antonio/Documents/Entregas_Modulo_8/Ponderadas/workspace/src/install/setup.zsh'
