@@ -1,24 +1,19 @@
 import os
-import openai
-from dotenv import load_dotenv
+from langchain.chat_models import ChatOpenAI
+from langchain.schema import AIMessage, HumanMessage
+import gradio as gr
 
-load_dotenv()
+os.environ["OPENAI_API_KEY"] = "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"  # Substitua pela sua chave
 
-def chat_with_gpt(prompt):
-    openai.api_key = os.getenv('OPENAI_API_KEY')
+llm = ChatOpenAI(temperature=1.0, model='gpt-3.5-turbo-0613')
 
-    response = openai.ChatCompletion.create(
-        model="gpt-3.5-turbo",  # ou outro modelo
-        messages=[
-            {"role": "system", "content": "Você é um generalista"},
-            {"role": "user", "content": prompt},
-        ]
-    )
+def predict(message, history):
+    history_langchain_format = []
+    for human, ai in history:
+        history_langchain_format.append(HumanMessage(content=human))
+        history_langchain_format.append(AIMessage(content=ai))
+    history_langchain_format.append(HumanMessage(content=message))
+    gpt_response = llm(history_langchain_format)
+    return gpt_response.content
 
-    return response.choices[0].message['content']
-
-# Solicita ao usuário que insira a pergunta
-user_prompt = input("Digite sua pergunta: ")
-
-# Chama a função chat_with_gpt com a pergunta do usuário
-print(chat_with_gpt(user_prompt))
+gr.ChatInterface(predict).launch()
