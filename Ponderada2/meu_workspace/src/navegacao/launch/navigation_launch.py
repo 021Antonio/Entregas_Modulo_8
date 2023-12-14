@@ -22,16 +22,13 @@ def generate_launch_description():
       ExecuteProcess(
         cmd=['ros2', 'launch', 'turtlebot3_gazebo', 'turtlebot3_world.launch.py'],
         output='screen',
-      )
+      ),
 
-      
-      # ExecuteProcess(
-      #    cmd=["sleep", "5"],
-      #    output="screen",
-      # ),
-
-      # ExecuteProcess(
-      #   cmd=['ros2', 'run', 'navegacao', 'pontos.py'],
-      #    output='screen',
-      # )
+      Node(
+          package='turtlebot3_teleop',
+          executable='teleop_keyboard',
+          name='teleop',
+          prefix = 'gnome-terminal --',
+          output='screen'
+        )
  ])
